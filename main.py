@@ -1,4 +1,4 @@
-from stats import get_book_letters, get_book_words
+from stats import get_book_letters, get_book_words, sort_list
 
 
 def main ():
@@ -7,8 +7,8 @@ def main ():
     num_words = get_book_words(book_contents)
     num_letters = get_book_letters(book_contents)
     print(f"{num_words} found in document")
-    print(num_letters)
-    
+    #print(num_letters)
+    print(sort_list(num_letters))    
     
     
 def read_file (file_path):
